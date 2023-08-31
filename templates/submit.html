@@ -1,0 +1,94 @@
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <style media="screen">
+      .cd h1{
+        margin-left: 450px;
+      
+        
+        color:black;
+      }
+      .fom{
+        margin-left:100px;
+        margin-top:100px;
+        
+      }
+      .fom label{
+        font-size: 20px;
+        color:white;
+      }
+    .for{
+        margin-top:-242px;
+        margin-left:540px;
+        font-size:27px;
+        
+        }
+     .for select{
+        border-radius: 5px;
+     }
+    </style>
+    </head>
+    <body style="background-color: Gray;">
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>SUBMIT FORM</title>
+</head>
+<body>
+  <div class="cd">
+    <h1 style=>Submit your profile</h1><hr>
+  </div>
+     <form  action="" method="post">
+      {% csrf_token %} 
+        <div class="fom">
+        <input  type="text"   placeholder="Enter the name" name="name" style="padding:5px;   "/>
+        <input type="date"name="date" style="padding:4px;padding-right:50px; margin-left:10px;   " placeholder="DOB"/><br><br>
+        <label >Current Job Location:</label>
+        <input  type="text" name="City"  placeholder="City" style="padding:5px;"/><br><br>
+        <input  type="text" name="State"   placeholder="State" style="padding:5px;  "/>
+        <input  type="text" name="Country"  placeholder="Country" style="padding:5px;   "/><br><br>
+  <!--    <select  style="padding:10px;">
+            <option  name="experience" disabled selected value="">Experience...</option>
+             <option value="0-1 year experience">0-1 year experience</option>
+             <option value="2 year experience">1-3 year experience</option>
+             <option value="3 year experience">3-5 year experience</option>
+             <option value="3 or more than 5 year experience">5-more than </option> 
+        </select><br><br>
+             <input  type="text" name="Cost"   placeholder="Cost To Company" style="padding:5px;  "/>
+        <input  type="text" name="ECTC"   placeholder="Expected Cost to Company" style="padding:5px;  "/>
+      </div>
+     </form>
+
+     <!--   <div class="for">
+       
+  <label >Technology:-</label>
+  <select style="font-size:25px;">
+    <option name="lag" value="">Technology......</option>
+      <option value="python">python</option>
+    <option value="Mobile App Development">Mobile App Development</option>
+    <option value="Web Development">Web Development</option>
+    <option value="SalesForce">SalesForce</option>
+  </select><br><br>
+  <label style="font-size:35px;">Perrefered job location</label><br><br>
+  <input  type="text" name="cityy"  placeholder="City" style="padding:5px;"/>
+  <input  type="text" name="yes"   placeholder="Open For Job" style="padding:5px; margin-left:50px;"/><br><br>
+  
+-->
+  <button type="submit">Submit</button></a>
+        </div>
+      </form>
+           
+
+        <script src="" async defer></script>
+    </body>
+
+</html>

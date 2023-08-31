@@ -1,0 +1,99 @@
+<html>
+<head>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+    <title>Login Form</title>
+<style>
+	
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size:50px;
+
+}
+
+.h_tag h2{
+    
+    text-align:center;
+    margin-top: 130px;
+    font-family: Arial;
+
+    
+}
+
+.login input{
+    
+    padding: 15px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    margin-top: 30px;
+    margin-left:500px;
+    
+    font-size:15px;
+    text-align:center; 
+    
+   
+    
+    opacity: .7;
+     
+}
+
+.login input:focus{
+    outline:none;
+}
+
+.a_tag {
+    margin-left: 547px;
+    padding: 20px;   
+}
+.a_tag a{
+    text-decoration: none;
+    color: black;
+
+    
+    
+}
+a:hover{
+    background: #ff7200;
+    color: black;
+    transition: .3s ease;
+    
+}
+
+.New_account  h6{
+    font-size: 14px;
+    margin-left: 480px;
+    text-decoration: none;
+}
+ 
+</style>
+
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %} 
+    <div class="h_tag">
+            <h2>Login Form</h2>
+            <div>
+           
+                <div class="login">
+                    
+                       <b> <input  type="email" name="email" placeholder="Email Address"><br>
+                        <input   type="password" name="pass1" placeholder="Enter Password"><br>
+                                            </b>
+                    </div>
+                    <div class="a_tag">
+                    <a href="{% url 'method'%}" target="_blank" style=" font-size:30px;">Login</a>
+                </div></div>
+                </form>
+                <div class="New_account">
+                    
+                    <a href="{% url 'login'%}"><h6>Create NewAccount</h6></a>
+           
+
+           
+</body>
+</html>
